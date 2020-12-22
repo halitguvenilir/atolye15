@@ -112,7 +112,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="Card__fee">
-                <span>Let’s Talk</span>
+                <span className="Card__fee-price">Let’s Talk</span>
               </div>
               <div className="Card__content">
                 <ul className="List">
