@@ -1,3 +1,217 @@
 .Card {
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 0 15px;
 
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+    padding: 31px 23px;
+    border: 1px solid $gray200;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    transition: all ease-in-out 0.2s;
+
+    @media (min-width: 992px) {
+      flex: 1;
+      width: 360px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+
+      @media (min-width: 992px) {
+        margin-right: 24px;
+        margin-bottom: 0;
+      }
+    }
+
+    &--bg-blue {
+      background-color: $blue;
+      color: #fff;
+      border-color: $blue;
+
+      .Card__header {
+
+        path {
+          stroke: #fff;
+        }
+
+        circle {
+          stroke: #fff;
+        }
+
+        rect {
+
+          &:first-child {
+            stroke: #fff;
+          }
+
+          &:last-child {
+            stroke: #fff;
+          }
+        }
+      }
+
+      .Card__desc {
+
+        p {
+          color: #fff;
+        }
+      }
+
+      .Card__fee {
+        color: #fff;
+
+        &-price {
+          color: #fff;
+        }
+      }
+
+      .List {
+
+        &__item {
+
+          svg {
+            fill: #fff;
+          }
+
+          span {
+            color: #fff;
+          }
+        }
+      }
+
+      .Button {
+
+        &--light-pink {
+          background-color: #fff;
+
+          &:hover {
+            background-color: $pink;
+          }
+        }
+
+        &--yellow {
+          background-color: #fff;
+          color: $blue;
+
+          &:hover {
+            background-color: $pink;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      border-color: #fff;
+      box-shadow: 0 14px 30px rgba(204, 204, 204, 0.32);
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+
+    @media (min-width: 480px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    svg {
+      stroke-width: 2;
+      flex: 0 0 auto;
+      width: 42px;
+      height: 42px;
+      margin-right: 1rem;
+
+      path {
+        stroke: $blue;
+      }
+
+      circle {
+        stroke: $pink;
+      }
+
+      rect {
+
+        &:first-child {
+          stroke: $blue;
+        }
+
+        &:last-child {
+          stroke: $pink;
+        }
+      }
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    &-left {
+      display: flex;
+      align-items: center;
+    }
+
+    &-right {
+      margin-top: 24px;
+
+      @media (min-width: 480px) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__desc {
+    margin-bottom: 32px;
+
+    p {
+      color: $gray700;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 24px;
+    }
+  }
+
+  &__fee {
+    display: flex;
+    place-items: center;
+    color: $gray700;
+    margin-bottom: 31px;
+
+    &-price {
+      color: #000;
+      margin-right: 11px;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 38.73px;
+    }
+
+    &-date {
+      margin-left: 5px;
+    }
+  }
+
+  &__footer {
+
+    .Button {
+      padding: 15px;
+      margin-top: 44px;
+    }
+  }
 }

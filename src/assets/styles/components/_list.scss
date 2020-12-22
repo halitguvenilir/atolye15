@@ -1,0 +1,30 @@
+.List {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  &__item {
+    display: flex;
+    place-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    svg {
+      fill: $pink;
+      flex: 0 0 auto;
+      width: 18px;
+      height: 18px;
+      margin-right: 17px;
+    }
+
+    &--color-gray {
+      color: $gray400;
+
+      svg {
+        fill: $gray400;
+      }
+    }
+  }
+}

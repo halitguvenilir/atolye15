@@ -2,10 +2,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   background-color: $g-body-background-color;
   color: #000;
   font-family: $g-font-family;
   font-size: $g-font-size;
   line-height: $g-line-height;
+  box-sizing: border-box;
+
+  @media (min-width: 992px) {
+    height: 100vh;
+  }
 }

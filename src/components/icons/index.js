@@ -1,3 +1,5 @@
+export { default as Cross } from './Cross'
 export { default as Enterprise } from './Enterprise'
 export { default as Free } from './Free'
 export { default as Pro } from './Pro'
+export { default as Tick } from './Tick'
