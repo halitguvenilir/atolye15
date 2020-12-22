@@ -1,0 +1,11 @@
+.Button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all ease-in-out 0.2s;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
