@@ -19,7 +19,7 @@
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
     border-radius: 16px;
-    transition: all ease-in-out 0.2s;
+    transition: border-color ease-in-out 0.2s, box-shadow ease-in-out 0.2s;
 
     @media (min-width: 992px) {
       flex: 1;
